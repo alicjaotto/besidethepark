@@ -4,6 +4,7 @@
   "dependencies": {
     "autoprefixer-stylus": "0.9.x",
     "axis": "0.6.x",
+    "babel-core": "^6.25.0",
     "coffee-script": "1.x",
     "css-pipeline": "0.3.x",
     "handlebars": "^4.0.10",
@@ -11,6 +12,8 @@
     "js-pipeline": "0.2.x",
     "jstransformer-marked": "1.x",
     "marked": "0.3.x",
+    "node-sass": "^4.5.3",
+    "roots-sass": "^1.0.0",
     "rupture": "0.6.x",
     "stylus": "0.54.x"
   }
