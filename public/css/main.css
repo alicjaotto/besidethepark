@@ -1,0 +1,31 @@
+*, *:after, *:before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+* {
+  box-sizing: border-box;
+  list-style-type: none;
+  font-family: 'Open Sans', Arial, sans-serif;
+  margin: 0; }
+
+body {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  body .container {
+    width: 1200px;
+    margin: 0 auto; }
+
+.hidden {
+  display: none; }
+
+.clearfix:before, .clearfix:after {
+  content: '';
+  clear: both;
+  display: block; }
+
+h3 {
+  font-size: 50px; }

@@ -1,0 +1,52 @@
+[class^="col_"] {
+  display: inline;
+  float: left;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+.col_1 {
+  width: 8.333333333333332%;
+}
+.col_2 {
+  width: 16.666666666666664%;
+}
+.col_3 {
+  width: 25%;
+}
+.col_4 {
+  width: 33.33333333333333%;
+}
+.col_5 {
+  width: 41.66666666666667%;
+}
+.col_6 {
+  width: 50%;
+}
+.col_7 {
+  width: 58.333333333333336%;
+}
+.col_8 {
+  width: 66.66666666666666%;
+}
+.col_9 {
+  width: 75%;
+}
+.col_10 {
+  width: 83.33333333333334%;
+}
+.col_11 {
+  width: 91.66666666666666%;
+}
+.col_12 {
+  width: 100%;
+}
+@media screen and (max-width: 480px) {
+  [class^="col_"] {
+    float: none;
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+}
+
+ /*# sourceMappingURL=grid.css.map */
