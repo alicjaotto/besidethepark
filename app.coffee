@@ -2,9 +2,10 @@ axis         = require 'axis'
 rupture      = require 'rupture'
 autoprefixer = require 'autoprefixer-stylus'
 js_pipeline  = require 'js-pipeline'
-#css_pipeline = require 'css-pipeline'
+css_pipeline = require 'css-pipeline'
 handlebars   = require 'handlebars'
-sass = require 'roots-sass'
+# sass         = require 'roots-sass'
+
 
 
 module.exports =
@@ -12,9 +13,8 @@ module.exports =
 
   extensions: [
     js_pipeline(files: 'assets/js/*.coffee'),
-    #css_pipeline(files: 'assets/css/*.styl'),
-    sass(files: "assets/css/main.sass", out: 'css/style.css', style: 'compressed')
-
+    css_pipeline(files: 'assets/css/*.styl')
+    # sass(files: "assets/css/main.scss", out: 'css/style.css', style: 'compressed')
   ]
 
   stylus:
@@ -24,5 +24,5 @@ module.exports =
   'coffee-script':
     sourcemap: true
 
-  handlebars:
+  jade:
       pretty: true

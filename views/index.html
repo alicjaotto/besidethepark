@@ -6,19 +6,89 @@
 
         <title>Beside the Park</title>
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-        <link href="css/main.css" rel="stylesheet" >
+        <link href="css/style.css" rel="stylesheet" >
 
     </head>​
 
     <body>​
-        <div id="page">
-            <script id="header" type="x-handlebars-template">
-                <h1> {{title}} </h1>
-                <p> {{text}}</p>
-                <p> {{text}}</p>
-        ​    </script>
+        <header>
+            <script id="header-template" type="x-handlebars-template">
 
-        </div>
+                <nav>
+                    <h1> {{logo}} </h1>
+                    <div>
+                        <img class="" src={{menu_png}}>
+                        <img class="" src={{search_png}}>
+                    </div>
+                    <div>
+                        <ul>
+                            {{#each links}}
+                            <li><a href={{menu_link}}>{{text}}</a></li>
+                            {{/each}}
+                        </ul>
+                    <div>
+                </nav>
+
+                <div class="">
+                    <div class="container">
+                        <div>
+                            <h2> {{introduction_title}} </h2>
+                            <p> {{introduction_text}} </p>
+                        </div>
+                        <div>
+                            <img class="" src="">
+                        <div>
+                    </div>
+                </div>
+        ​    </script>
+        </header>
+
+        <section id="about">
+            <script id="about-template" type="x-handlebars-template">
+                <div class="container">
+                    <div>
+                        <h3> {{title}} </h3>
+                        <p> {{paragraph1}} </p>
+                        <p> {{paragraph2}} </p>
+                        <p> {{paragraph3}} </p>
+                        <p> {{paragraph4}} </p>
+                        <p> {{paragraph5}} </p>
+                    </div>
+                </div>
+            </script>
+        </section>
+        <section id="offer">
+            <script id="offer-template" type="x-handlebars-template">
+                <div class="container">
+                    <div class="row">
+                        <div>
+                            <h4> {{offer1_title}} </h4>
+                            <p> {{offer1_text}} </p>
+                            <a href={{{offer1_link}}}>{{offer1_link_title}}</a>
+                        </div>
+                        <div>
+                            <h4> {{offer2_title}} </h4>
+                            <p> {{offer2_text}} </p>
+                            <a href={{offer2_link}}>{{offer2_link_title}}</a>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div>
+                            <h4> {{offer3_title}} </h4>
+                            <p> {{offer3_text}} </p>
+                            <a href={{offer3_link}}>{{offer3_link_title}}</a>
+                        </div>
+                        <div>
+                            <h4> {{offer4_title}} </h4>
+                            <p> {{offer4_text}} </p>
+                            <a href={{offer4_link}}>{{offer4_link_title}}</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </script>
+        </section>
     <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>​
     <script type="text/javascript" src="js/jquery-handlebars-1.1.4.min.js"></script>​
     <script type="text/javascript" src="js/main.js"></script>
