@@ -16,13 +16,17 @@
 
             <div class="header">
                 <nav class="navbar">
-                    <h1 class="navbar__logo"> {{logo}} </h1>
-                    <div class="navbar__menu">
-                        <img class="hidden" src={{menu_png}}>
-                        <img class="hidden" src={{search_png}}>
+                    <div class="container">
+                        <a href={{hyperlink}}><h1 class="navbar__logo"> {{logo}} </h1></a>
+                        <div class="navbar__menu">
+                            <img id="menu_button" class="hidden" src={{menu_png}}>
+                            <img id="search_button" class="hidden" src={{search_png}}>
+                            <input id="search_input" class="hidden" type="text" name="search" placeholder="Search..">
+                        </div>
                     </div>
-                    <div>
-                        <ul class="hidden">
+
+                    <div id="menu" class="hidden navbar__menu__list">
+                        <ul class="container menu__list">
                             {{#each links}}
                             <li><a href={{menu_link}}>{{text}}</a></li>
                             {{/each}}
@@ -30,15 +34,18 @@
                     </div>
                 </nav>
 
-
                     <div class="container">
-                        <div class="col_5 header__intro">
-                            <h2 class="intro__title"> {{introduction_title}} </h2>
-                            <p class="intro__text"> {{introduction_text}} </p>
+                        <div class="row header__intro">
+                            <div class="col_6">
+                                <h2 class="intro__title"> {{introduction_title}} </h2>
+                                <p class="intro__text"> {{introduction_text}} </p>
+                            </div>
                         </div>
-                        <div>
-                            <img class="intro__feature" src="img/iphone.png">
+
+                        <div class="header__intro__feature">
                         </div>
+
+                    </div>
 
                 </div>
             </div>
