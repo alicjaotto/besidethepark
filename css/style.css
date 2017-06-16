@@ -50,8 +50,7 @@
 }
 * {
   font-family: "Open Sans";
-  font-size: 10px;
-  line-height: 1.5;
+  font-size: 14px;
   box-sizing: border-box;
   list-style-type: none;
   margin: 0;
@@ -75,7 +74,7 @@
   display: none;
 }
 .header {
-  background-image: url("../img/header_mobile.png");
+  background-image: url("../img/header_mobile.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -112,29 +111,32 @@
   z-index: 2;
 }
 .header__intro {
-  margin-top: 40%;
+  margin-top: 35%;
   -webkit-animation-name: intro;
           animation-name: intro;
   -webkit-animation-duration: 7s;
           animation-duration: 7s;
-  width: 60%;
+  width: 70%;
 }
 .intro__text {
   color: #fff;
+  line-height: 1.2em;
+  margin-top: 15px;
 }
 .intro__title {
   color: #fff;
-  font-size: 2.5em;
+  font-size: 2em;
+  line-height: 30px;
 }
 .header__intro__feature {
   background-image: url("../img/iphone.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  width: 270px;
+  width: 260px;
   height: 250px;
   margin-top: -15%;
-  margin-left: 20%;
+  margin-left: 30%;
   z-index: 1;
 }
 a {
@@ -147,7 +149,7 @@ a {
 }
 .about__title {
   font-weight: 300;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 .about__text {
   padding: 15px 25px 5px 0;
@@ -159,7 +161,7 @@ a {
 }
 .offer__title {
   color: #fff;
-  font-size: 2.5em;
+  font-size: 2em;
   font-weight: 300;
 }
 .offer__text {
@@ -187,18 +189,17 @@ a {
   * {
     font-size: 14px;
   }
-  h1,
-  h2,
-  h3,
-  h4 {
-    font-size: 35px;
+  .about__title,
+  .intro__title,
+  .offer__title {
+    font-size: 2.5em;
   }
   img[class="hidden"] {
     display: inline-block;
     cursor: pointer;
   }
   .header {
-    background-image: url("../img/header_web.png");
+    background-image: url("../img/header_web.jpg");
     width: 100%;
     height: 952px;
     max-height: 952px;
@@ -238,24 +239,31 @@ a {
   .menu__list li a {
     color: #fff;
     font-size: 18px;
+    opacity: 1;
   }
   .menu__list li a:hover {
-    letter-spacing: 5px;
+    font-weight: bold;
   }
   .menu__list li:first-child {
     padding-top: 35vh;
   }
   .header__intro {
     width: 100%;
+    margin-top: 45%;
   }
   .header__intro__feature {
     width: 750px;
     height: 750px;
-    margin-top: -15%;
+    margin-top: -20%;
     margin-left: 35%;
   }
   .offer__box {
     height: 220px;
+  }
+}
+@media (max-width: 1150px) and (min-width: 480px) {
+  .header__intro__feature {
+    display: none;
   }
 }
 @-webkit-keyframes intro {
