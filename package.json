@@ -12,8 +12,6 @@
     "js-pipeline": "0.2.x",
     "jstransformer-marked": "1.x",
     "marked": "0.3.x",
-    "node-sass": "^4.5.3",
-    "roots-sass": "^1.0.0",
     "rupture": "0.6.x",
     "stylus": "0.54.x"
   }

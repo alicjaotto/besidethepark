@@ -8,6 +8,7 @@ $(document).ready(function() {
 
     const header_data = {
         logo: "Beside the Park",
+        hyperlink: "http://besidethepark.com",
         introduction_title: "Lorem ipsum",
         introduction_text: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         menu_png: "img/menu.png",
@@ -71,6 +72,19 @@ $(document).ready(function() {
     const offerHTML = compiledOfferTemplate(offer_data);
 
     $('#offer').append(offerHTML);
+
+
+//menu and search visibility
+
+    $('#menu_button').on("click", (event) => {
+        $('#menu').toggleClass('hidden');
+
+    });
+
+    $('#search_button').on('click', (event) => {
+        $('#search_input').toggleClass('hidden');
+    });
+
 
 
 });
