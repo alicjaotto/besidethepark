@@ -1,12 +1,10 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-'use strict';
+"use strict";
 
 $(document).ready(function () {
 
-    console.log('hello world!'
-
     //header scripts and data
-    );var headerTemplate = $('#header-template').html();
+    var headerTemplate = $('#header-template').html();
     var compiledHeaderTemplate = Handlebars.compile(headerTemplate);
 
     var header_data = {
@@ -17,7 +15,6 @@ $(document).ready(function () {
         menu_png: "img/menu.png",
         search_png: "img/search.png",
         links: [{ menu_link: "#about", text: "about" }, { menu_link: "#portfolio", text: "portfolio" }, { menu_link: "#contact", text: "contact us" }]
-
     };
 
     var headerHTML = compiledHeaderTemplate(header_data);
@@ -48,22 +45,22 @@ $(document).ready(function () {
     var offer_data = {
         offer1_title: "Built to last",
         offer1_text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        offer1_link: "http://findmore.org",
+        offer1_link: "#built",
         offer1_link_title: "Find out more",
 
         offer2_title: "Our clients",
         offer2_text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-        offer2_link: "'http://findmore.org'",
+        offer2_link: "#ourclients",
         offer2_link_title: "Get insights",
 
         offer3_title: "Sign up & see why",
         offer3_text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-        offer3_link: "http://findmore.org",
+        offer3_link: "#signup",
         offer3_link_title: "Get started now",
 
         offer4_title: "Perfect pictures",
         offer4_text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.",
-        offer4_link: "http://findmore.org",
+        offer4_link: "#perfectpictures",
         offer4_link_title: "Find out more"
     };
 
