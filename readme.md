@@ -2,14 +2,18 @@
 
 A responsive landing page using roots compiler and handlebars template engine.
 
-### Setup
+to do:
+- style mobile img to be well positioned on tablets and very large devices (now invisible between 480-1150px and above 1400px)
+- add "x" instead "hamburger" icon when menu list is visible
+
+
+### if you want to run this project in roots...
 
 - make sure [node.js](http://nodejs.org) and [roots](http://roots.cx) are installed
 - clone this repo down and `cd` into the folder
 - run `npm install`
 - run `roots watch`
-- ???
-- get money
+
 
 ### Deploying
 
